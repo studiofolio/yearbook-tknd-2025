@@ -19,7 +19,7 @@
     const $flipbook = $('.flipbook');
 
     for (let i = 1; i <= totalPages; i++) {
-      $flipbook.append(`<div class="page"><img src="images/page${i}.jpg" /></div>`);
+      $flipbook.append(`<div class="page"><img loading="lazy" src="images/page${i}.jpg" /></div>`);
     }
 
     $('.flipbook').turn({
