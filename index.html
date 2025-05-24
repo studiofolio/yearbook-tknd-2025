@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TK Yearbook</title>
+  <style>
+    body {
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #flipbook {
+      width: 800px;
+      height: 500px;
+    }
+    .page {
+      width: 400px;
+      height: 500px;
+    }
+    .page img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@4/turn.min.js"></script>
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page"><img src="images/page1.jpg"></div>
+    <div class="page"><img src="images/page2.jpg"></div>
+    <!-- Tambah halaman sesuai kebutuhan -->
+  </div>
+
+  <script>
+    $("#flipbook").turn({
+      width: 800,
+      height: 500,
+      autoCenter: true
+    });
+  </script>
+</body>
+</html>
